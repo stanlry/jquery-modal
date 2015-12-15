@@ -81,7 +81,7 @@
     block: function() {
       this.$elm.trigger($.modal.BEFORE_BLOCK, [this._ctx()]);
       this.blocker = $('<div class="jquery-modal blocker"></div>');
-      this.$body.css('overflow','hidden');
+      // this.$body.css('overflow','hidden');
       this.$body.append(this.blocker);
       if(this.options.doFade) {
         this.blocker.css('opacity',0).animate({opacity: 1}, this.options.fadeDuration);
